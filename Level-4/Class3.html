@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#Home">Home</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section>Home</section><br>
+        <article> Eos odio possimus consectetur quas iure aliquam quis unde earum? Minima omnis illo rerum.</article><br>
+        <aside>For Ads</aside><br>
+        <p id="Home" target="_blank">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque eligendi quas provident perferendis sed aliquid, vero odio eius esse enim beatae corporis id tempora ducimus similique soluta dolor facere dolores!</p>
+    </main>
+    <hr>
+    <div>
+        <h1>Hello</h1>
+        <p>Param</p>
+    </div>
+    <hr>
+
+
+    <table border="3">
+        <caption>Student Data</caption> <!-- <caption> tag is use to give you Information about table. -->
+        <th colspan="2">This is class Data.</th>  <!-- colspan is use to merage the column in table. -->
+        <tr> <!-- <tr> tag is a table row -->
+            <th>Name</th> <!-- <td> is a table head -->
+            <th>RollNumber</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td>Abid Hussain</td>
+            <td>F21BINSE1M02036</td>
+            <td>CyberSecurity</td>
+        </tr>
+        <tr>
+            <td>Muneeb</td>
+            <td>F21BINSE1M02038</td>
+            <td>CyberSecurity</td>
+        </tr>
+        <tr>
+            <td>Munaim</td>
+            <td>F21BINSE1M02059</td>
+            <td>CyberSecurity</td>
+        </tr>
+    </table>
+    <hr>
+    <b>UserName and Password </b>
+    <form action="content_me.php" method="post"> <!-- Action is use to connect or save the data on Database.
+         Method is a protocol of HTTPS which send the data on Database. -->
+        UserName: <input type="text" name="EnterUserName" value="Abid" required placeholder="Enter"><br>
+        <!-- Name Attribute is use for server that which data is related.
+         value attribute is use provide additional information. 
+         required attribute is use when we want user enter username necessary. 
+         placeholder attribute is use when we create username box and show user Enter UserNamer in username box as a transparent. -->
+        Password: <input type="password" placeholder="12345">
+        <input type="submit" value="submit">
+    </form>
+    <hr>
+    <header>Please select Gender;</header>
+    <label for="male">Male:</label>
+    <!-- <label> tag is use write the name of content. -->
+    <input type="radio" id="male" name="gender" value="male"><br>
+    <label for="female">Female:</label>
+    <input type="radio" id="female" name="gender" value="female"><br>
+    <label for="other">Other:</label>
+    <input type="radio" id="other" name="gender" value="other"><hr>
+
+        <header><b><u>Please Check your Expertise. </u> </b></header>
+        <input type="date"><br>
+        <input type="button" value="button"><br>
+        <label for="Solidity">Solidity : </label>
+        <input type="checkbox" name="language" id="Solidity" value="Solidity"><br>
+        <input type="range"><br>
+        <label for="Python">Python : </label>
+        <input type="checkbox" name="language" id="Python" value="python"><br>
+        <input type="range"><br>
+        <label for="JavaScript">JavaScript : </label>
+        <input type="checkbox" name="language" id="JavaScript" value="JavaScript"><br>
+        <input type="range"><hr>
+        <label for="Country">Select your Country</label>
+        <select name="Country" id="Country"> <!-- <select> tag is use when we make country list and we want show all list in selection form. 
+            And we write in <option> tag. -->
+            <option value="pakistan">Pakistan</option>
+            <option value="india">India</option>
+            <option value="america">America</option>
+        </select><hr>
+        <label for="textarea">Description: </label><br> <!-- For create description box we use Textarea with define row and cols. -->
+        <textarea name="text" id="textarea" placeholder="Enter short Message" rows="8" cols="40"></textarea>
+        <hr>
+        <iframe width="200" height="300" src="https://www.youtube.com/embed/rklidcZ-aLU?si=w5VxmYTamWaoZecw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- <iframe> tag is use to embbed the code from youtube or any Site.-->
+        <footer>
+            Policy
+        </footer>
+</body>
+</html>
